@@ -12,10 +12,10 @@ class Patient
 	def self.all
 	ALL	
 	end
-	def doctor_patient
+	def add_2
 		@health = @health + 2
 	end
-	def nurse_patient
+	def add_1
 		@health = @health + 1
 	end
 	def time_effects

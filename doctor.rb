@@ -9,6 +9,12 @@ class Doctor
 	def self.all
 	ALL	
 	end
+	def treat_patient(patient)
+		patient.add_2 
+		puts "#{doctor.name} treated #{patient.name} "
+
+	end
+
 
 
 end

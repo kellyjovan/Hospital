@@ -34,6 +34,7 @@ class Hospital
       puts "Doctor or Nurse?"
       doctor_or_nurse = gets.chomp.downcase
       if doctor_or_nurse == "doctor"
+
       elsif doctor_or_nurse == "nurse" 
       end
 
@@ -61,4 +62,11 @@ class Hospital
     Patient.new(name,age)
     menu
   end
+  def show_patients
+    Patient.all.each do |patient|
+    end
+
+  end
+
+
 end
