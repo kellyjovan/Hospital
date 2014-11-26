@@ -8,6 +8,7 @@ class Patient
 		@health = rand(1..10)
 		ALL << self
 	end
+	
 	def self.all
 	ALL	
 	end
