@@ -12,10 +12,18 @@ class Hospital
     puts "4. Treat a patient"
     puts "5. Fire someone"
     puts "6. Time passed"
+    user_choice
+  end 
+  def user_choice
     choice = gets.chomp.to_i
-
     if choice == 1
       puts "You are adding a patient"
+      puts "Enter a name"
+      name = gets.chomp
+      puts "Enter a age"
+      age  = gets.chomp
+      Patient.new(name,age)
+      menu
     elsif choice == 2
       puts "You are adding a doctor"
     elsif choice == 3
@@ -26,7 +34,6 @@ class Hospital
       puts "You are firing someone"
     elsif choice == 6
       puts "Time passed"
-    end
-      
+    end 
   end
 end
