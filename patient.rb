@@ -10,14 +10,17 @@ class Patient
 	end
 	
 	def self.all
-	ALL	
+		ALL	
 	end
+
 	def add_2
 		@health = @health + 2
 	end
+
 	def add_1
 		@health = @health + 1
 	end
+
 	def time_effects
 		@health = @health - 1
 		if health <= 0

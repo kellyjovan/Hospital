@@ -1,5 +1,6 @@
 class Doctor
 	ALL = []
+	attr_accessor :name, :specialty
 	def initialize(name, specialty)
 		@name = name
 		@specialty = specialty
@@ -14,7 +15,4 @@ class Doctor
 		puts "#{doctor.name} treated #{patient.name} "
 
 	end
-
-
-
 end
